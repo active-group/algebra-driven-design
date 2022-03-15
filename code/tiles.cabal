@@ -1,0 +1,38 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 68a4ee352b9f5fe9f17bfba186c6c0f7b604d5d462f1f9aa407a659bbc4302cf
+
+name:           tiles
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/isovector/algebra-driven-design#readme>
+homepage:       https://github.com/isovector/algebra-driven-design#readme
+bug-reports:    https://github.com/isovector/algebra-driven-design/issues
+author:         Sandy Maguire
+maintainer:     sandy@sandymaguire.me
+copyright:      2020 Sandy Maguire
+license:        BSD3
+build-type:     Simple
+
+library
+  exposed-modules:
+      Tiles.Color
+      Tiles.Exercise
+      Tiles.Efficient
+      Tiles.Initial
+  hs-source-dirs:
+      ./
+  default-extensions: ConstraintKinds DeriveGeneric GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase OverloadedStrings RecordWildCards ScopedTypeVariables StandaloneDeriving TupleSections TypeApplications ViewPatterns DerivingStrategies DerivingVia
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wredundant-constraints -fhide-source-paths -Wpartial-fields -Wmissing-deriving-strategies
+  build-depends:
+      JuicyPixels
+    , QuickCheck
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , hashable
+    , quickspec
+  default-language: Haskell2010
